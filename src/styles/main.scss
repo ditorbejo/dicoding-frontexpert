@@ -132,7 +132,7 @@ body {
       }
       .list-restaurant-items {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-template-columns: repeat(2, 1fr);
         padding: 20px 40px;
         gap: 20px;
         .card-item {
@@ -208,6 +208,8 @@ body {
   }
 }
 
+
+
 @media only screen and (max-width: 600px) {
   body {
     header {
@@ -235,6 +237,7 @@ body {
         }
         .list-restaurant-items {
           display: grid;
+          grid-template-columns: repeat(2, minmax(300px, 1fr));
           font-size: 14px;
         }
       }
@@ -286,7 +289,7 @@ body {
         }
         .list-restaurant-items {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           font-size: 18px;
         }
       }

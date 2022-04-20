@@ -27,19 +27,33 @@ drawerElement.addEventListener('click', event => {
   event.stopPropagation();
 });
 
+const reduceText = (text) =>{
+    
+    let  count = 100;
+
+    let result = text.slice(0, count) + (text.length > count ? '...' : '');
+
+    return result;
+
+}
 
 const makeMenuElements = (restaurants) => {
     let elements = '';
 
     restaurants.forEach(restaurant =>{
         elements += `
+        
         <div class="card-item">
-            <img tabindex="0" src="${restaurant.pictureId}" alt="gambar-restaurant ${restaurant.name}">
+            <img tabindex="0" src="${
+              restaurant.pictureId
+            }" alt="gambar-restaurant ${restaurant.name}">
             <div class="information-item">
                 <p tabindex="0" class="nama">Nama: ${restaurant.name} </p>
                 <p tabindex="0" class="kota">Kota: ${restaurant.city}</p>
                 <p tabindex="0" class="rating">Rating: ${restaurant.rating} </p>
-                <p tabindex="0" class="deskripsi">Deskripsi: ${restaurant.description}</p>
+                <p tabindex="0" class="deskripsi">Deskripsi: ${reduceText(
+                  restaurant.description
+                )} </p>
             </div>
         </div>
         `;
