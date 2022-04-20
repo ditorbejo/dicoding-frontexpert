@@ -132,7 +132,7 @@ body {
       }
       .list-restaurant-items {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
         padding: 20px 40px;
         gap: 20px;
         .card-item {
@@ -235,7 +235,6 @@ body {
         }
         .list-restaurant-items {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
           font-size: 14px;
         }
       }
@@ -364,6 +363,7 @@ body {
     main {
       .hero-image {
         min-width: 1000px;
+        background-size: cover;
       }
       .content-menu {
         .list-restaurant-items {
