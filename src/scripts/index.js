@@ -1,65 +1,34 @@
+/* eslint-disable no-use-before-define */
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/main.scss';
-import hero from '../public/images/heros/hero-image_2.jpg';
-import aboutImage from '../public/images/assets/ditor.jpg';
-import data from '../DATA.json'
-console.log('Hello Coders! :)');
+import WebSocketInitiator from './utils/web-socket-initiator';
+import App from './views/app';
+import swRegister from './utils/sw-register';
+import CONFIG from './globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
-const heroImage = document.querySelector('.hero-image');
-heroImage.style.backgroundImage = `url(${hero})`;
-
-
-const listRestaurantsElement = document.querySelector('.list-restaurant-items');
-const hamburgerButtonElement = document.querySelector('.hamburger-button');
-const drawerElement = document.querySelector('#drawer');
-
-const aboutImageElement = document.querySelector('.about-image');
-aboutImageElement.setAttribute('src', aboutImage);
-
-hamburgerButtonElement.addEventListener('click', event => {
-    drawerElement.classList.toggle('open');
-    event.stopPropagation();
+const app = new App({
+  button: document.querySelector('.hamburger-button'),
+  drawer: document.querySelector('#drawer'),
+  content: document.querySelector('#maincontent'),
 });
 
-drawerElement.addEventListener('click', event => {
-  drawerElement.classList.remove('open');
-  event.stopPropagation();
+window.addEventListener('hashchange', () => {
+  app.renderPage();
 });
 
-const reduceText = (text) =>{
-    
-    let  count = 100;
+window.addEventListener('load', () => {
+  app.renderPage();
+  swRegister();
+  WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
+});
 
-    let result = text.slice(0, count) + (text.length > count ? '...' : '');
-
-    return result;
-
-}
-
-const makeMenuElements = (restaurants) => {
-    let elements = '';
-
-    restaurants.forEach(restaurant =>{
-        elements += `
-        
-        <div class="card-item">
-            <img tabindex="0" src="${
-              restaurant.pictureId
-            }" alt="gambar-restaurant ${restaurant.name}">
-            <div class="information-item">
-                <p tabindex="0" class="nama">Nama: ${restaurant.name} </p>
-                <p tabindex="0" class="kota">Kota: ${restaurant.city}</p>
-                <p tabindex="0" class="rating">Rating: ${restaurant.rating} </p>
-                <p tabindex="0" class="deskripsi">Deskripsi: ${reduceText(
-                  restaurant.description
-                )} </p>
-            </div>
-        </div>
-        `;
-    });
-    return elements;
-
-}
-
-listRestaurantsElement.innerHTML = makeMenuElements(data.restaurants);
+const skipContent = document.querySelector('.skip-link');
+const detailContent = document.getElementById('maincontent');
+skipContent.onclick = e => {
+  e.preventDefault();
+  console.log(detailContent);
+  detailContent.focus();
+};
