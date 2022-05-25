@@ -1,4 +1,7 @@
 import hero from '../../../public/images/heros/hero-image_2.jpg';
+import heroSmall from '../../../public/images/heros/hero-600px.jpg';
+import heroMedium from '../../../public/images/heros/hero-1000px.jpg';
+import heroLarge from '../../../public/images/heros/hero-1200px.jpg';
 import RestaurantDbSource from '../../data/restaurantdb-source';
 import { createRestaurantItemElements } from '../templates/template-creator';
 import aboutImage from '../../../public/images/assets/ditor.jpg';
@@ -103,6 +106,47 @@ const ListRestaurant = {
   async afterRender() {
     const heroImage = document.querySelector('.hero-image');
     heroImage.style.backgroundImage = `url(${hero})`;
+
+  function resizeImage(size) {
+      if (size.matches) { // If media query matches
+        heroImage.style.backgroundImage = `url(${heroSmall})`;
+      }
+   }
+  function resizeImageMedium(size) {
+    if (size.matches) { // If media query matches
+      heroImage.style.backgroundImage = `url(${heroMedium})`;
+    }
+  }
+  function resizeImageLarge(size) {
+    if (size.matches) { // If media query matches
+      heroImage.style.backgroundImage = `url(${heroLarge})`;
+    }
+  }
+
+  function resizeImageLarger(size) {
+    if (size.matches) { // If media query matches
+      heroImage.style.backgroundImage = `url(${hero})`;
+    }
+  }
+    
+    var small = window.matchMedia("(max-width: 600px)");
+    var medium = window.matchMedia("(min-width: 768px)");
+    var large = window.matchMedia("(min-width: 1024px)");
+    var larger = window.matchMedia("(min-width: 1200px)");
+
+
+    resizeImage(small);
+    resizeImageMedium(medium);
+    resizeImageLarge(large);
+    resizeImageLarger(larger);
+
+    small.addListener(resizeImage);
+    medium.addListener(resizeImageMedium);
+    large.addListener(resizeImageLarge);
+    larger.addListener(resizeImageLarger);
+
+
+
     const restaurantSource = await RestaurantDbSource.listRestaurants();
     const { restaurants } = restaurantSource;
 

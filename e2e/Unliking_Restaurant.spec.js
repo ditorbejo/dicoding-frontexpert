@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 Feature('Unliking Restaurants');
 
-Scenario('liking one restaurant', ({ I }) => {
+Scenario('Unliking one restaurant', ({ I }) => {
     I.amOnPage('/');
     I.seeElement('.card-item .nama-restaurant a');
 

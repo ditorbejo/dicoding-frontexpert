@@ -229,6 +229,7 @@ body {
     height: 35vh;
     font-size: 24px;
     color: white;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     .hero-content {
@@ -804,7 +805,7 @@ body {
     }
     main {
       .hero-image {
-        background-size: 600px;
+        background-image: url("/./src/public/images/heros/hero-600px.jpg");
         h2 {
           font-size: 18px;
         }
@@ -861,7 +862,7 @@ body {
     }
     main {
       .hero-image {
-        background-size: 800px;
+        background-image: url("/./src/public/images/heros/hero-1000px.jpg");
         h2 {
           font-size: 18px;
         }
@@ -1100,8 +1101,7 @@ body {
   body {
     main {
       .hero-image {
-        min-width: 1000px;
-        background-size: 1000px;
+        background-image: url("/./src/public/images/heros/hero-image_2.jpg");
       }
       .list-locations-container-restaurant {
         .list-result-location-restaurant {
