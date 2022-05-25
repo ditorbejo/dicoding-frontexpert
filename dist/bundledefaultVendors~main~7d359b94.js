@@ -1131,7 +1131,7 @@ try {
     Function("r", "regeneratorRuntime = r")(runtime);
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(7)(module)))
 
 /***/ }),
 
@@ -1153,9 +1153,9 @@ try {
   factory = factory.bind(null, window, window.document);
 
   if (( false ? undefined : _typeof(module)) == 'object' && module.exports) {
-    factory(__webpack_require__(7));
+    factory(__webpack_require__(8));
   } else if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(7)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(8)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -1304,11 +1304,11 @@ try {
     e.detail.width = parentFit.calculateSize(element, e.detail.width);
   });
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(7)(module)))
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1338,7 +1338,7 @@ module.exports = function (module) {
 
 /***/ }),
 
-/***/ 7:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
@@ -2150,7 +2150,7 @@ function l(window, document, Date) {
   };
   return lazysizes;
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(7)(module)))
 
 /***/ })
 

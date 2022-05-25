@@ -311,11 +311,18 @@ var FavoriteRestaurantIdb = {
 /* harmony default export */ __webpack_exports__["a"] = (FavoriteRestaurantIdb);
 
 /***/ }),
-/* 6 */,
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "4708daf73a75ef8b401790dccf0d8e73.jpg");
+
+/***/ }),
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -344,11 +351,11 @@ var DrawerInitiator = {
 /* harmony default export */ __webpack_exports__["a"] = (DrawerInitiator);
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _views_pages_list_restaurant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _views_pages_list_restaurant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
 /* harmony import */ var _views_pages_detail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
 /* harmony import */ var _views_pages_like__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18);
 
@@ -364,18 +371,11 @@ var routes = {
 /* harmony default export */ __webpack_exports__["a"] = (routes);
 
 /***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "bd6b63650298f334a08b66446d66c536.jpg");
-
-/***/ }),
 /* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "4708daf73a75ef8b401790dccf0d8e73.jpg");
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "bd6b63650298f334a08b66446d66c536.jpg");
 
 /***/ }),
 /* 14 */
@@ -674,7 +674,7 @@ var WebSocketInitiator = {
 };
 /* harmony default export */ var web_socket_initiator = (WebSocketInitiator);
 // EXTERNAL MODULE: ./src/scripts/views/app.js
-var app = __webpack_require__(9);
+var app = __webpack_require__(10);
 
 // EXTERNAL MODULE: ./node_modules/serviceworker-webpack-plugin/lib/runtime.js
 var lib_runtime = __webpack_require__(19);
@@ -722,7 +722,7 @@ var swRegister = /*#__PURE__*/function () {
 
 /* harmony default export */ var sw_register = (swRegister);
 // EXTERNAL MODULE: ./node_modules/lazysizes/lazysizes.js
-var lazysizes = __webpack_require__(7);
+var lazysizes = __webpack_require__(8);
 
 // EXTERNAL MODULE: ./node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js
 var ls_parent_fit = __webpack_require__(24);
