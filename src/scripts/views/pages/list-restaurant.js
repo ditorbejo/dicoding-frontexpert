@@ -38,12 +38,11 @@ const ListRestaurant = {
       </section>
       <section id="about" class="about-us">
         <h2 tabindex="0">About Us</h2>
-        <img
-          tabindex="0"
-          class="about-image"
-          src="${aboutImage}"
-          alt="gambar-pembuat-website"
-        />
+        <picture>
+            <source type="image/webp" srcset="${aboutImage}">
+            <source type="image/jpeg" srcset="${aboutImage}">
+            <img tabindex="0" aria-label="gambar pembuat web" class="lazyload" data-src="${aboutImage}" alt="gambar-pembuat-web">
+            </picture>
         <p tabindex="0">
           Hai Saya Dimas Toriq Pratama Putra, Saya adalah mahasiswa Universitas
           brawijaya Malang Saya Belajar membuat website dan ingin menjadi Web
