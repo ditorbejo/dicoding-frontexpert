@@ -248,6 +248,7 @@ body {
     }
   }
   main {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 64px;
@@ -803,6 +804,7 @@ body {
     }
     main {
       .hero-image {
+        background-size: 600px;
         h2 {
           font-size: 18px;
         }
@@ -859,6 +861,7 @@ body {
     }
     main {
       .hero-image {
+        background-size: 800px;
         h2 {
           font-size: 18px;
         }
@@ -1098,7 +1101,7 @@ body {
     main {
       .hero-image {
         min-width: 1000px;
-        background-size: cover;
+        background-size: 1000px;
       }
       .list-locations-container-restaurant {
         .list-result-location-restaurant {

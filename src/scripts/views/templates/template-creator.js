@@ -19,7 +19,7 @@ const createRestaurantItemElements = restaurants => {
             <source type="image/jpeg" srcset="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}">
             <img tabindex="0" aria-label="${
               restaurant.name
-            }" class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="gambar-restaurant ${restaurant.name}">
+            }" loading="lazy" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="gambar-restaurant ${restaurant.name}">
             </picture>
             <div class="information-item">
                 <p tabindex="0" class="nama-restaurant"><a href="${`/#/detail/${restaurant.id}`}">${
@@ -53,7 +53,7 @@ const createRestaurantDetailElements = restaurant => `
             <source type="image/jpeg" srcset="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}">
             <img tabindex="0" aria-label="${
               restaurant.name
-            }" class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="gambar-restaurant ${restaurant.name}">
+            }" loading="lazy" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="gambar-restaurant ${restaurant.name}">
             </picture>
             <div class="restaurant-detail-information">
                 <div class="restaurant-detail-information-location">

@@ -117,7 +117,6 @@ class App {
       </div>
       `;
     } else {
-      this._content.style.display = 'flex';
       this._content.innerHTML = await page.render();
       this._content.style.display = 'block';
       await page.afterRender();

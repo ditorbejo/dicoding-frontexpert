@@ -41,7 +41,7 @@ const ListRestaurant = {
         <picture>
             <source type="image/webp" srcset="${aboutImage}">
             <source type="image/jpeg" srcset="${aboutImage}">
-            <img tabindex="0" aria-label="gambar pembuat web" class="lazyload" data-src="${aboutImage}" alt="gambar-pembuat-web">
+            <img tabindex="0" aria-label="gambar pembuat web" loading="lazy" data-src="${aboutImage}" alt="gambar-pembuat-web">
             </picture>
         <p tabindex="0">
           Hai Saya Dimas Toriq Pratama Putra, Saya adalah mahasiswa Universitas
