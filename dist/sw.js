@@ -2,6 +2,9 @@ var serviceWorkerOption = {
   "assets": [
     "/4708daf73a75ef8b401790dccf0d8e73.jpg",
     "/bd6b63650298f334a08b66446d66c536.jpg",
+    "/85b8a21463a3feabf263dc827fc00732.jpg",
+    "/414391c73b4b139cd260f10e881a0bb8.jpg",
+    "/2acf1b82611f67410f7f43e456940e5a.jpg",
     "/a453ffcce8f0723edb9c5919ab0c1d98.jpg",
     "/ae100740754e9ff8755b58049351fae0.jpg",
     "/bundledefaultVendors~main~7d359b94.js",
@@ -24,6 +27,10 @@ var serviceWorkerOption = {
     "/images/assets/ditor.jpg",
     "/images/assets/malang.jpg",
     "/images/assets/surabaya.jpg",
+    "/images/heros/hero-1000px.jpg",
+    "/images/heros/hero-1200px.jpg",
+    "/images/heros/hero-400px.jpg",
+    "/images/heros/hero-600px.jpg",
     "/images/heros/hero-image_2.jpg",
     "/index.html"
   ]

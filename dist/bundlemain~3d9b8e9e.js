@@ -192,7 +192,7 @@ var UrlParser = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var idb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
+/* harmony import */ var idb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
 /* harmony import */ var _globals_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -321,8 +321,15 @@ var FavoriteRestaurantIdb = {
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */,
-/* 11 */
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "bd6b63650298f334a08b66446d66c536.jpg");
+
+/***/ }),
+/* 11 */,
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -351,13 +358,13 @@ var DrawerInitiator = {
 /* harmony default export */ __webpack_exports__["a"] = (DrawerInitiator);
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var _views_pages_list_restaurant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
-/* harmony import */ var _views_pages_detail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
-/* harmony import */ var _views_pages_like__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18);
+/* harmony import */ var _views_pages_detail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
+/* harmony import */ var _views_pages_like__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
 
 
 
@@ -371,29 +378,43 @@ var routes = {
 /* harmony default export */ __webpack_exports__["a"] = (routes);
 
 /***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "bd6b63650298f334a08b66446d66c536.jpg");
-
-/***/ }),
 /* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "a453ffcce8f0723edb9c5919ab0c1d98.jpg");
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "85b8a21463a3feabf263dc827fc00732.jpg");
 
 /***/ }),
 /* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "414391c73b4b139cd260f10e881a0bb8.jpg");
+
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "2acf1b82611f67410f7f43e456940e5a.jpg");
+
+/***/ }),
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "a453ffcce8f0723edb9c5919ab0c1d98.jpg");
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.p + "ae100740754e9ff8755b58049351fae0.jpg");
 
 /***/ }),
-/* 16 */,
-/* 17 */
+/* 19 */,
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -539,14 +560,14 @@ var LikeButtonPresenter = {
 /* harmony default export */ __webpack_exports__["a"] = (LikeButtonPresenter);
 
 /***/ }),
-/* 18 */,
-/* 19 */,
-/* 20 */,
 /* 21 */,
 /* 22 */,
 /* 23 */,
 /* 24 */,
-/* 25 */
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -554,13 +575,13 @@ var LikeButtonPresenter = {
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/regenerator-runtime/runtime.js
-var runtime = __webpack_require__(21);
+var runtime = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./src/styles/main.css
-var main = __webpack_require__(22);
+var main = __webpack_require__(25);
 
 // EXTERNAL MODULE: ./src/styles/main.scss
-var styles_main = __webpack_require__(23);
+var styles_main = __webpack_require__(26);
 
 // CONCATENATED MODULE: ./src/scripts/utils/notification-helper.js
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -674,10 +695,10 @@ var WebSocketInitiator = {
 };
 /* harmony default export */ var web_socket_initiator = (WebSocketInitiator);
 // EXTERNAL MODULE: ./src/scripts/views/app.js
-var app = __webpack_require__(10);
+var app = __webpack_require__(11);
 
 // EXTERNAL MODULE: ./node_modules/serviceworker-webpack-plugin/lib/runtime.js
-var lib_runtime = __webpack_require__(19);
+var lib_runtime = __webpack_require__(22);
 var lib_runtime_default = /*#__PURE__*/__webpack_require__.n(lib_runtime);
 
 // CONCATENATED MODULE: ./src/scripts/utils/sw-register.js
@@ -725,7 +746,7 @@ var swRegister = /*#__PURE__*/function () {
 var lazysizes = __webpack_require__(8);
 
 // EXTERNAL MODULE: ./node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js
-var ls_parent_fit = __webpack_require__(24);
+var ls_parent_fit = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./src/scripts/index.js
 /* eslint-disable no-use-before-define */
