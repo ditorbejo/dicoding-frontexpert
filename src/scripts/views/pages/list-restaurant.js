@@ -108,32 +108,31 @@ const ListRestaurant = {
     heroImage.style.backgroundImage = `url(${hero})`;
 
   function resizeImage(size) {
-      if (size.matches) { // If media query matches
-        heroImage.style.backgroundImage = `url(${heroSmall})`;
-      }
-   }
+    if (size.matches) {
+      heroImage.style.backgroundImage = `url(${heroSmall})`;
+    }
+  }
   function resizeImageMedium(size) {
-    if (size.matches) { // If media query matches
+    if (size.matches) {
       heroImage.style.backgroundImage = `url(${heroMedium})`;
     }
   }
   function resizeImageLarge(size) {
-    if (size.matches) { // If media query matches
+    if (size.matches) {
       heroImage.style.backgroundImage = `url(${heroLarge})`;
     }
   }
 
   function resizeImageLarger(size) {
-    if (size.matches) { // If media query matches
+    if (size.matches) {
       heroImage.style.backgroundImage = `url(${hero})`;
     }
   }
-    
-    var small = window.matchMedia("(max-width: 600px)");
-    var medium = window.matchMedia("(min-width: 768px)");
-    var large = window.matchMedia("(min-width: 1024px)");
-    var larger = window.matchMedia("(min-width: 1200px)");
 
+  const small = window.matchMedia('(max-width: 600px)');
+  const medium = window.matchMedia('(min-width: 768px)');
+  const large = window.matchMedia('(min-width: 1024px)');
+  const larger = window.matchMedia('(min-width: 1200px)');
 
     resizeImage(small);
     resizeImageMedium(medium);
@@ -144,8 +143,6 @@ const ListRestaurant = {
     medium.addListener(resizeImageMedium);
     large.addListener(resizeImageLarge);
     larger.addListener(resizeImageLarger);
-
-
 
     const restaurantSource = await RestaurantDbSource.listRestaurants();
     const { restaurants } = restaurantSource;
