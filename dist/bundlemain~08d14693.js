@@ -378,38 +378,34 @@ var ListRestaurant = {
             case 0:
               resizeImageLarger = function _resizeImageLarger(size) {
                 if (size.matches) {
-                  // If media query matches
                   heroImage.style.backgroundImage = "url(".concat(_public_images_heros_hero_image_2_jpg__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], ")");
                 }
               };
 
               resizeImageLarge = function _resizeImageLarge(size) {
                 if (size.matches) {
-                  // If media query matches
                   heroImage.style.backgroundImage = "url(".concat(_public_images_heros_hero_1200px_jpg__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], ")");
                 }
               };
 
               resizeImageMedium = function _resizeImageMedium(size) {
                 if (size.matches) {
-                  // If media query matches
                   heroImage.style.backgroundImage = "url(".concat(_public_images_heros_hero_1000px_jpg__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], ")");
                 }
               };
 
               resizeImage = function _resizeImage(size) {
                 if (size.matches) {
-                  // If media query matches
                   heroImage.style.backgroundImage = "url(".concat(_public_images_heros_hero_600px_jpg__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], ")");
                 }
               };
 
               heroImage = document.querySelector('.hero-image');
               heroImage.style.backgroundImage = "url(".concat(_public_images_heros_hero_image_2_jpg__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], ")");
-              small = window.matchMedia("(max-width: 600px)");
-              medium = window.matchMedia("(min-width: 768px)");
-              large = window.matchMedia("(min-width: 1024px)");
-              larger = window.matchMedia("(min-width: 1200px)");
+              small = window.matchMedia('(max-width: 600px)');
+              medium = window.matchMedia('(min-width: 768px)');
+              large = window.matchMedia('(min-width: 1024px)');
+              larger = window.matchMedia('(min-width: 1200px)');
               resizeImage(small);
               resizeImageMedium(medium);
               resizeImageLarge(large);
